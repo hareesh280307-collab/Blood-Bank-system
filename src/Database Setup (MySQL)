@@ -1,0 +1,15 @@
+CREATE DATABASE bloodbank;
+USE bloodbank;
+
+CREATE TABLE donors (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    blood_group VARCHAR(5),
+    age INT,
+    phone VARCHAR(15)
+);
+
+CREATE TABLE blood_stock (
+    blood_group VARCHAR(5) PRIMARY KEY,
+    units INT
+);
